@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyheter</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <h1 id="header">Hva er nytt i versjon 0.3</h1>
+    <div id="container">
+        <ul>
+            <li>Gradient eller blå regnbue effekt på mattestykkene.</li>
+            <li>Gjorde OK knappen noen pixler lengre ;)</li>
+            <li>Lagte en SKIKKELIG timer fordi Multi Smart Øving ikke gjorde det!</li>
+            <li>Fjernet ting som ikke trengte å være der.</li>
+        </ul>
+        <button onclick="goBack();">Gå tilbake</button>
+    </div>
+</body>
+<script>
+    function goBack() {
+        location.href = "../index.html";
+        console.log("went to " + location.href);
+    }
+</script>
+</html>
