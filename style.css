@@ -6,7 +6,8 @@
 }
 
 body {
-  background-image: url("https://bit.ly/3oOmzab");
+  background: red;
+  /*background-image: url("https://bit.ly/3oOmzab");*/
 }
 
 h1,
