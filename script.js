@@ -54,9 +54,9 @@ function randomize() {
     let name1 = Math.floor(Math.random() * names.length);
     let name2 = Math.floor(Math.random() * names.length);
     
-    var num1 = Math.floor(Math.random() * 1000);
-    var num2 = Math.floor(Math.random() * 1000);
-    math.innerHTML = names[name1] + " har " + num1 + " kroner. " + names[name2] + " har " + num2 + ". Hvor mye har de til sammen?";
+    var num1 = Math.floor(Math.random() * 110);
+    var num2 = Math.floor(Math.random() * 110);
+    math.innerHTML = names[name1] + " har en iq på " + num1 + ". " + names[name2] + " har en iq på " + num2 + ". Hvor stor iq har de til sammen?";
   }
   
   // Checking the operators
