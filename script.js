@@ -45,10 +45,11 @@ function randomize() {
   a = Math.floor(Math.random() * 20);
   b = Math.floor(Math.random() * 20);
   
-  c = Math.floor(Math.random() * 7);
+  t = Math.floor(Math.random() * 7); // t stands for TASK
   
-  // Other questions
-  if (c != 1) {
+  
+  // TODO: add a better way to randomize the tasks
+  if (t != 1) {
     math.innerHTML = a + ' ' + operators[op] + ' ' + b;
   } else {
     let name1 = Math.floor(Math.random() * names.length);

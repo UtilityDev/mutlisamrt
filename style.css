@@ -46,14 +46,11 @@ h6 {
 }
 
 #math {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   position: relative;
   top: 50px;
   text-align: center;
   font-size: 30px;
-  background: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #header {
