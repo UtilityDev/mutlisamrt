@@ -47,7 +47,7 @@ function randomize() {
   
   c = Math.floor(Math.random() * 7);
   
-  // Other questions
+  // TODO: Add more stuff, and make the randomness just a tiny bit better ;)
   if (c != 1) {
     math.innerHTML = a + ' ' + operators[op] + ' ' + b;
   } else {
