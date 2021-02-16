@@ -17,6 +17,8 @@ var task = 0;
 let timeleft = 60;
 let op;
 
+let currentTheme = 0;
+
 // Operators and Task stuff
 operators = ["+", "x", "-"];
 names =
@@ -41,9 +43,9 @@ message01.style.display = 'none';
 
 // Randomizing the numbers
 function randomize() {
-  op = Math.floor(Math.random()* operators.length);
-  a = Math.floor(Math.random() * 20);
-  b = Math.floor(Math.random() * 20);
+  op = Math.floor(Math.random() * operators.length);
+  a = Math.floor(Math.random() * 50);
+  b = Math.floor(Math.random() * 50);
   
   c = Math.floor(Math.random() * 7);
   
@@ -54,16 +56,18 @@ function randomize() {
     let name1 = Math.floor(Math.random() * names.length);
     let name2 = Math.floor(Math.random() * names.length);
     
-    var num1 = Math.floor(Math.random() * 1000);
-    var num2 = Math.floor(Math.random() * 1000);
-    math.innerHTML = names[name1] + " har " + num1 + " kroner. " + names[name2] + " har " + num2 + ". Hvor mye har de til sammen?";
+    var iq1 = Math.floor(Math.random() * 105);
+    var iq2 = Math.floor(Math.random() * 105);
+
+    var iqSum;
+
+    math.innerHTML = names[name1] + ' har en iq på ' + iq1 + '. ' + names[name2] + ' har en iq på ' + iq2 + '. Hvor mye har de til sammen?';
   }
-  
   // Checking the operators
   if (operators[op] == "+") { sum = a + b; }
   if (operators[op] == "x") { sum = a * b; }
   if (operators[op] == "-") { sum = a - b; }
-  if (c == 1) { sum = num1 + num2; }
+  if (c == 1) { sum = iq1 + iq2; }
 }
 
 randomize();
@@ -109,6 +113,12 @@ function nextTask() {
   }
 }
 
-function news() {
-  location.href = "news/news.html";
+function theme() {
+  let themes = ["normal", "gamer", "shrek"];
+  let themeID = themes[currentTheme];
+  currentTheme++;
+
+  if (currentTheme >= themes.length) {
+    currentTheme = 0;
+  }
 }

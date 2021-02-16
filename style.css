@@ -25,7 +25,7 @@ h6 {
   top: 75px;
 }
 
-#answer {
+.answer {
   text-align: center;
   position: relative;
   top: 75px;
@@ -36,6 +36,8 @@ h6 {
 #next {
   font-size: 22px;
   border-radius: 10px;
+  border: none;
+  height: 30px;
 }
 
 #submit {
@@ -72,7 +74,7 @@ h6 {
   bottom: 5px;
 }
 
-#timer {
+.timer {
   position: absolute;
   text-align: left;
   top: 0;
@@ -82,9 +84,12 @@ h6 {
   font-size: 25px;
 }
 
-#news {
-  font-size: 30px;
-  font-family: 'Poppins';
+#theme {
+  position: absolute;
+  bottom: 0;
+  font-size: 15px;
   border: none;
-  border-radius: 5px;
+  height: 30px;
+  width: 120px;
+  border-radius: 20px;
 }
