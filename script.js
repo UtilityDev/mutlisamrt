@@ -17,7 +17,8 @@ var task = 0;
 let timeleft = 60;
 let op;
 
-let currentTheme = 0;
+let themes = ["https://bit.ly/3oOmzab", "https://i.pinimg.com/originals/b5/7b/66/b57b666c6de1778896a77e25bad990bb.jpg"];
+let currentTheme;
 
 // Operators and Task stuff
 operators = ["+", "x", "-"];
@@ -55,20 +56,16 @@ function randomize() {
   } else {
     let name1 = Math.floor(Math.random() * names.length);
     let name2 = Math.floor(Math.random() * names.length);
-    
-<<<<<<< HEAD
     var iq1 = Math.floor(Math.random() * 105);
     var iq2 = Math.floor(Math.random() * 105);
 
     var iqSum;
 
     math.innerHTML = names[name1] + ' har en iq på ' + iq1 + '. ' + names[name2] + ' har en iq på ' + iq2 + '. Hvor mye har de til sammen?';
-=======
     var num1 = Math.floor(Math.random() * 110);
     var num2 = Math.floor(Math.random() * 110);
     math.innerHTML = names[name1] + " har en iq på " + num1 + ". " + names[name2] + " har en iq på " + num2 + ". Hvor stor iq har de til sammen?";
->>>>>>> 21c6496266d7164f018b04d3d87f8d2c31c2e41f
-  }
+}
   // Checking the operators
   if (operators[op] == "+") { sum = a + b; }
   if (operators[op] == "x") { sum = a * b; }
@@ -86,6 +83,8 @@ function checkAnswer() {
     message01.style.display = 'block';
     message01.style.color = 'lime';
     message01.innerHTML = 'riktig';
+
+    setTimeout(nextTask, 1000);
   } else {
     submit.style.backgroundColor = 'red';
     message01.style.display = 'block';
@@ -120,11 +119,5 @@ function nextTask() {
 }
 
 function theme() {
-  let themes = ["normal", "gamer", "shrek"];
-  let themeID = themes[currentTheme];
-  currentTheme++;
-
-  if (currentTheme >= themes.length) {
-    currentTheme = 0;
-  }
+  document.body.classList.toggle("gamer-theme");
 }

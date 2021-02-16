@@ -9,12 +9,7 @@ body {
   background-image: url("https://bit.ly/3oOmzab");
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -31,9 +26,7 @@ h6 {
   top: 75px;
 }
 
-#input,
-#submit,
-#next {
+#input, #submit, #next {
   font-size: 22px;
   border-radius: 10px;
   border: none;
@@ -45,10 +38,16 @@ h6 {
   font-weight: 700;
   border: none;
   height: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: gray;
 }
 
 #math {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   position: relative;
   top: 50px;
   text-align: center;
@@ -92,4 +91,9 @@ h6 {
   height: 30px;
   width: 120px;
   border-radius: 20px;
+}
+
+.gamer-theme {
+  background-image: url("https://i.pinimg.com/originals/b5/7b/66/b57b666c6de1778896a77e25bad990bb.jpg");
+  color: black;
 }
