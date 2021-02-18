@@ -24,9 +24,8 @@ let currentTheme;
 operators = ["+", "x", "-"];
 names =
 ["Julian", "Alecsandro", "Oliver", "Amalie", "Noah", "Håkon", "Tormod", "Ørjan", "Amanda", "Søren Mathias",
-"Rafael", "Jonatan", "Julian Albert", "Ingrid", "Maja", "Saulius", "Arnfinn", "Marina", "Eivind"];
-
-// Setting the timer to the time left before it starts counting down to prevent it from showing the HTML
+"Rafael", "Jonatan", "Julian Albert", "Ingrid", "Maja", "Saulius", "Arnfinn", "Marina", "Eivind"]
+;// Setting the timer to the time left before it starts counting down to prevent it from showing the HTML
 time.innerHTML = timeleft + " minutter igjen denne uka!";
 
 // Timer
