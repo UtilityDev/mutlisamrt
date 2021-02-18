@@ -56,11 +56,11 @@ function randomize() {
   } else {
     let name1 = Math.floor(Math.random() * names.length);
     let name2 = Math.floor(Math.random() * names.length);
-      
-      var iq1 = random(-100, 420);
-      var iq2 = random(-100, 420);
 
-      math.innerHTML = names[name1] + ' har en iq på ' + iq1 + '. ' + names[name2] + " har en iq på " + iq2 + ". Hvor stor iq har de til sammen?"; 
+    var iq1 = Math.floor(Math.random() * 110);
+    var iq2 = Math.floor(Math.random() * 110);
+      
+    math.innerHTML = names[name1] + ' har en iq på ' + iq1 + '. ' + names[name2] + " har en iq på " + iq2 + ". Hvor stor iq har de til sammen?"; 
 }
   // Checking the operators
   if (operators[op] == "+") { sum = a + b; }
