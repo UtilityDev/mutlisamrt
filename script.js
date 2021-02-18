@@ -73,7 +73,7 @@ randomize();
 
 // Checking the answer
 function checkAnswer() {
-  if (inputField.value == sum || inputField.value == 69 || inputField.value == 420 || inputField.value == "ur mom" || inputField.value == 42 || inputField.value == 69420 || inputField.value == "milk" || inputField.value == "" + a + b) {
+  if (inputField.value == sum || inputField.value == 69 || inputField.value == 420 || inputField.value == "ur mom" || inputField.value == 42 || inputField.value == 69420 || inputField.value == "milk" || inputField.value == "thicc" || inputField.value == "" + a + b) {
     submit.style.backgroundColor = 'lime';
     
     message01.style.display = 'block';
